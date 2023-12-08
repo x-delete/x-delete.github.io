@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+
+/* -- webfont setting ------------------------------------------------------------ */
+
+@font-face {
+	font-family: 'social-button';
+	src: url( '../font/social-button.woff' ) format( 'woff' ),
+			 url( '../font/social-button.ttf' ) format( 'truetype' ),
+			 url( '../font/social-button.eot' ) format( 'embedded-opentype' ),
+			 url( '../font/social-button.svg' ) format( 'svg' );
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+
+
+/* -- social button base setting ------------------------------------------------------------ */
+
+div.social-button ul {
+	list-style-type: none;
+	line-height: 1;
+	font-size: 12px;
+}
+
+div.social-button ul li {
+	display: inline-block;
+    margin: 10px;
+}
+
+div.social-button ul li a {
+	display: inline-block;
+	padding: 9px 15px 7px;
+	border-radius: 4px;
+	text-decoration: none;
+	color: #ffffff;
+	vertical-align: middle;
+}
+
+div.social-button ul li a:before {
+	display: inline-block;
+	font-family: 'social-button' !important;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	font-size: 130%;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+div.social-button ul li a:hover {
+	opacity: 0.7;
+}
+
+
+
+
+/* -- icon only ------------------------------------------------------------ */
+
+div.icon-only ul li a {
+	padding: 9px 10px 9px;
+}
+
+div.icon-only ul li a:before {
+	margin-right: 0px;
+}
+
+
+
+
+/* -- circle ------------------------------------------------------------ */
+
+div.circle ul li a {
+	display: inline-block;
+	padding: 10px;
+	border-radius: 20px;
+	text-decoration: none;
+	color: #ffffff;
+	vertical-align: middle;
+}
+
+
+
+
+/* -- twitter tweet ------------------------------------------------------------ */
+
+div.social-button ul li.twitter-tweet a {
+	background: #1b95e0;
+}
+
+div.social-button ul li.twitter-tweet a:before {
+	content: "\ea96";
+}
+
+
+
+
+/* -- facebook share ------------------------------------------------------------ */
+
+div.social-button ul li.facebook-share a {
+	background: #3a5795;
+}
+
+div.social-button ul li.facebook-share a:before {
+	content: "\ea91";
+}
+
+
+
+
+/* -- instagram follow ------------------------------------------------------------ */
+
+div.social-button ul li.instagram-follow a {
+	background: radial-gradient( circle at 5% 170%, #fdf497 0%, #fdf497 5%, #fd5949 30%, #d6249f 50%, #285AEB 100% );
+}
+
+div.social-button ul li.instagram-follow a:before {
+	content: "\ea92";
+}
+
+div.icon-only ul li.instagram-follow a {
+	background: radial-gradient( circle at 20% 120%, #fdf497 0%, #fdf497 10%, #fd5949 50%, #d6249f 70%, #285AEB 100% );
+}
+
+
+
+
+/* -- hatena button ------------------------------------------------------------ */
+
+div.social-button ul li.hatena-bookmark a {
+	background: #00a4de;
+}
+
+div.social-button ul li.hatena-bookmark a:before {
+	content: "\e900";
+}
+
+
+
+
+/* -- pocket save ------------------------------------------------------------ */
+
+div.social-button ul li.pocket-save a {
+	background: #ef4156;
+}
+
+div.social-button ul li.pocket-save a:before {
+	content: "\e902";
+}
+
+
+
+
+/* -- line button ------------------------------------------------------------ */
+
+div.social-button ul li.line-send a {
+	background: #00c300;
+}
+
+div.social-button ul li.line-send a:before {
+	content: "\e901";
+}
+
+
+
+
+
+
+
+
