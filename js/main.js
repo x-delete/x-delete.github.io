@@ -19,20 +19,22 @@ document.addEventListener("DOMContentLoaded", () => {
                 alert('コピーに失敗しました。');
             });
     });
-    const button2 = document.getElementsByClassName("let")[2];
-    button2.addEventListener('click', () => {
-        if (!navigator.clipboard) {
-            alert("このブラウザは対応していません");
-            return;
-        }
-        navigator.clipboard.writeText(min).then(
-            () => {
-                alert('軽量版のコードをコピーしました。');
-            },
-            () => {
-                alert('コピーに失敗しました。');
-            });
-    });
+    if (document.getElementsByClassName("let").length == 4) {
+        const button2 = document.getElementsByClassName("let")[2];
+        button2.addEventListener('click', () => {
+            if (!navigator.clipboard) {
+                alert("このブラウザは対応していません");
+                return;
+            }
+            navigator.clipboard.writeText(min).then(
+                () => {
+                    alert('軽量版のコードをコピーしました。');
+                },
+                () => {
+                    alert('コピーに失敗しました。');
+                });
+        });
+    }
 });
 
 const setUpAccordion = () => {
