@@ -20,6 +20,19 @@
 	margin-bottom: 16px;
   }
 
+  h2 {
+	font-size: medium;
+	text-align: center;
+  }
+
+  h2 span {
+	display: block;
+  }
+
+  h3 {
+	font-size: medium;
+  }
+
   header {
 	width: 100%;
 	height: 100px;
